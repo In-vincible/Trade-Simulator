@@ -101,3 +101,8 @@ std::vector<double> SimSample1(int time_index, std::vector<std::vector<double>> 
 
 > **_NOTE:_** Shared memory would have been slower than memory but still average latency is like 300 nano secs which is good enough for any simulation purposes, Another benefit of shared is all 3 containers(input/output/algo engine) could talk to each other and behave accordingly.
 
+### Build Details - 
+1. Code is writen to run linux/amd64 env, and docker uses latest ubuntu as base image.
+2. Docker/Cmake are the build tools used for the cross-platform flexibility provided by them.
+3. Uses latest version of Boost library.
+4. Boost Tests runs as a part of build to have preventive alerts. (check CMakeLists.txt).
