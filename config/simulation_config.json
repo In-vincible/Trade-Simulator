@@ -1,0 +1,48 @@
+{
+  "Simulation": {
+    "Info": {
+      "StartTime": "2020-01-01",
+      "EndTime": "2022-12-31"
+    },
+    "Algo": {
+      "SimSample1": {
+        "Algoname": "Algo1",
+        "param1": 1.0,
+        "param2": 24,
+        "input": "Close"
+      },
+      "SimSample3": {
+        "Algoname": "Algo2",
+        "var1": 365,
+        "var2": 20,
+        "var3": 2.0,
+        "var4": 0,
+        "input": "Close"
+      },
+      "SimSample4": {
+        "Algoname": "Algo3",
+        "var1": 365,
+        "var2": 20,
+        "var3": 2.0,
+        "var4": 0,
+        "input": "Open"
+      },
+      "SimSample5": {
+        "Algoname": "Algo4",
+        "var1": 365,
+        "var2": 20,
+        "var3": 2.0,
+        "var4": 0,
+        "input": "signal1"
+      },
+      "BadName": {
+        "Algoname": "Non Existent",
+        "var1": 365,
+        "var2": 20,
+        "var3": 2.0,
+        "var4": 0,
+        "input": "Close"
+      }
+    }
+  }
+}
