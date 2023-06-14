@@ -98,6 +98,7 @@ std::vector<double> SimSample1(int time_index, std::vector<std::vector<double>> 
 2. Currently, program can go into OOM if too many threads opened also number of threads are not chosen cleverly - ideally Core/Logical Processors should be in the configs and we should decide number of threads (concurrently) accordingly - and everything else should be sequential.
 3. Ideally - Input Data Service, Out Put Data Service, Simulation Engine should run in 3 separate containers. (here all 3 containers could have been horizontally scaled as well)
 4. Data(input/output) is currently loaded in memory(RAM) - we should load them in shared memory to be able to scale to 100s of strategies with months of data. (I wrote shared memory wrapper(committed) but due time constraint didn't use it).
+5. Add plug and play profiler for memory, latency, CPU usage, RAM usage and number of open threads.
 
 > **_NOTE:_** Shared memory would have been slower than memory but still average latency is like 300 nano secs which is good enough for any simulation purposes, Another benefit of shared is all 3 containers(input/output/algo engine) could talk to each other and behave accordingly.
 
